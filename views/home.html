@@ -22,47 +22,78 @@
 </head>
 
 <body>
-    <header class="navbar">
-        <i class="navbar-header">
-            <img src="/images/logo-mercado-liebre.svg" alt="logo" srcset="">
-
-            <div>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="/images/logo-mercado-liebre.svg" class="logo" srcset="">
+            <div class="barra-de-busqueda">
                 <input placeholder="Buscar productos, marcas..."></input>
-                <br>
-
-
                 <button>
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
+            <h2 class="copy-header">
+                <i class="fa solid fa-hand-holding-dollar"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+            </h2>
+        </div>
 
-            <div>
-                <center>
-                    <p><i class="fa solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
-                </center>
-            </div>
-            <br>
-        </i>
 
-        <nav>
-            <ul>
+        <a href="#" class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </a>
+
+        <nav class="main-navbar">
+            <ul class="left-navbar">
                 <li><a href="#">Ofertas</a></li>
                 <li><a href="#">Tiendas Oficiales</a></li>
                 <li><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
             </ul>
-            <br>
-            <ul>
-                <li><a href="#">Crea tu cuenta</a> <i class="fa-solid fa-id-card"></i></li>
-                <li><a href="#">Ingresá</a> <i class="fa-solid fa-arrow-right-to-bracket"></i></li>
+
+            <ul class="right navbar">
+                <li><a href="/register.html">Crea tu cuenta</a> <i class="fa-solid fa-id-card"></i></li>
+                <li><a href="/login.html">Ingresá</a> <i class="fa-solid fa-arrow-right-to-bracket"></i></li>
                 <li><a href="#">Mis compras</a> <i class="fa-solid fa-basket-shopping"></i></li>
             </ul>
         </nav>
 
-        <div class="burger-menu">
-            <i class="fas fa-bars"></i>
-        </div>
+        <nav class="main-header-bottom-bar"></nav>
+
     </header>
+
+    <form action="" method="post" class="create-form">
+        <div class="control-form">
+            <label>Nombre del producto</label>
+            <input type="text" name="Nombreproducto">
+        </div>
+        <div class="control-form">
+            <label>Ingrese su correo electronico</label>
+            <input type="email" name="Emailproducto">
+        </div>
+        <div class="control-form">
+            <label>Ingrese su contraseña</label>
+            <input type="password" name="Contraseñaproducto">
+        </div>
+        <div class="control-form">
+            <label>¿Acepta terminos y condiciones?</label>
+            <input type="radio" name="Terminosycondiciones">
+        </div>
+        <div class="control-form">
+            <label>Genero</label>
+            <select name="categoria">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+        <div class="control-form">
+            <label>Deje sus comentarios:</label>
+            <textarea name="comentarios" placeholder="¿Tiene alguna sugerencia? Escribala aqui"></textarea>
+        </div>
+        <button type="reset">Borrar</button>
+        <button type="submit">Enviar</button>
+
+    </form>
 
     <section class="banner">
         <img src="/images/img-home-banner.jpg" alt="">
@@ -75,16 +106,18 @@
             </header>
             <div class="productos">
                 <article>
-                    <img src="/images/img-cafetera-moulinex.jpg" alt="cafetera">
-                    <div class="descripcion">
+                    <div class="fa-truck-camion">
+                        <img src="/images/img-cafetera-moulinex.jpg" alt="cafetera">
                         <div class="camion">
+                        <div class="descripcion">
                             <i class="fa-solid fa-truck-fast"></i>
                         </div>
-                        <div class="producto-contenedor">
-                            <p class="precios">$6.770 </p>
-                            <p class="descuentos"> 40% Off</p>
+                            <div class="producto-contenedor">
+                                <p class="precios">$6.770 </p>
+                                <p class="descuentos"> 40% Off</p>
+                            </div>
+                            <b class="descripciones">Cafetera Moulinex</b>
                         </div>
-                        <b class="descripciones">Cafetera Moulinex</b>
                     </div>
                 </article>
                 <article>

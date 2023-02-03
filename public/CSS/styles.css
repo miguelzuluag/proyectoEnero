@@ -10,13 +10,67 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-header {
-    padding-bottom: 16px;
+
+.logo {
+    width: 200px;
 }
 
+.copy-header {
+    font-weight: 400;
+    text-align: center;
+}
 
-.navbar {
+.create-form {
+    padding: 20px 15px;
+}
+
+.control-form {
+    margin-bottom: 15px;
+}
+
+.control-form label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.burger-menu {
+    text-align: center;
+    background-color: #1259c3;
+    border-radius: 8px;
+    display: block;
+    max-width: 50px;
+    font-size: 18px;
+    color: #fff;
+    margin: auto;
+    padding: 15px 0;
+}
+
+.main-header {
     background-color: #EAC926;
+    padding: 20px;
+}
+
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.main-navbar a { 
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+.barra-de-busqueda {
+    text-align: center;
+    display: none;
 }
 
 .banner img {
@@ -71,19 +125,6 @@ section .productos>article>img {
 
 }
 
-.burger-menu {
-    text-align: center;
-    background-color: #1259c3;
-    border-radius: 6px;
-    height: 35px;
-    width: 35px;
-    font-size: 25px;
-    margin-bottom: 10px;
-    color: #fff;
-    margin: auto;
-    margin-top: 22px;
-    padding: 4px;
-}
 
 footer {
     text-align: center;
@@ -115,6 +156,11 @@ article div.camion {
     right: 20px;
 }
 
+.fa-truck-camion {
+    /*position: relative;*/
+
+}
+
 article div.camion i {
     margin-top: 10%;
 }
@@ -142,13 +188,43 @@ article {
 
 /*Tablets*/
 @media (min-width: 769px) {
-    .navbar-header {
+    .main-header-top-bar {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        border: dotted 2px red;
         display: flex;
         justify-content: space-between;
+    }
+    .copy-header {
+        max-width: 350px;
+        text-align: right;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        margin-top: 15px;
+    }
+    .main-navbar ul {
+        display: flex;
+    }
+    .main-navbar li {
+        margin: 0 5px;
+    }
+    .barra-de-busqueda {
+        display: flex;
     }
 }
 
 /*Desktop*/
-@media (min-width: 1024px) {}
+@media (min-width: 1200px) {
+    .main-header-top-bar, .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-navbar {
+        gap: 16px;
+        margin-top: 15px;
+    }
+}
