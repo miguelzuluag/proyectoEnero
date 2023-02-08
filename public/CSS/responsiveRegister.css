@@ -1,0 +1,20 @@
+/* tablets */
+@media(min-width:481px) {
+    main {
+        width: 70vw;
+    }
+}
+
+/* desktop */
+@media(min-width:769px) {
+    div.btnOpciones {
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    div.btnOpciones button {
+        width: 100px;
+    }
+}
