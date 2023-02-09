@@ -1,4 +1,4 @@
-/* tablets */
+/* Para Tablets */
 @media(min-width:481px) {
     article {
         position: relative;
@@ -77,6 +77,7 @@
         width: auto;
         text-align: center;
     }
+
     .footer-firts {    
         display: flex;    
         flex-direction: column;
@@ -91,7 +92,7 @@
     }
 }
 
-/* destkop */
+/* Para Escritorio */
 @media(min-width:769px) {
     article {
         width: 23%;

@@ -1,11 +1,11 @@
-/* tablets */
+
 @media(min-width:481px) {
     main {
         width: 70vw;
     }
 }
 
-/* desktop */
+/* Escritorio */
 @media(min-width:769px) {
     div.btnOpciones {
         flex-direction: row;
@@ -16,5 +16,48 @@
 
     div.btnOpciones button {
         width: 100px;
+    }
+
+    .navBar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btnMenu {
+        display: none;
+    }
+
+    .topHeader {
+        display: flex;
+        gap: 14px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: auto;
+    }
+
+    header.header-firts div.topHeader div.search-bar {
+        width: auto;
+    }
+
+    .tarjet-card {
+        width: auto;
+        text-align: center;
+    }
+    .footer-firts {    
+        display: flex;    
+        flex-direction: column;
+        padding-top: 50px;
+        background-color: white;
+        text-align: center;
+    }
+    
+    .footer-firts2 {
+        display: flex;
+        gap: 20px;    
     }
 }

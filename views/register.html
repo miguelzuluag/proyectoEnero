@@ -11,14 +11,16 @@
     <link rel="stylesheet" href="/CSS/styles.css">
     <link rel="stylesheet" href="/CSS/register.css">
     <link rel="stylesheet" href="/CSS/responsiveRegister.css">
-    <link rel="stylesheet" href="/CSS/responsiveHome.css">
+    
 </head>
 
 <body>
     <header class="header-firts">
         <div class="topHeader">
             <div class="logo">
+                <a href="/">
                 <img src="/images/logo-mercado-liebre.svg" alt="logo" srcset="">
+                </a>
             </div>
 
             <div class="search-bar">
@@ -42,8 +44,8 @@
             </ul>
 
             <ul class="lista">
-                <li><a href="/register">Creá tu cuenta</a> <i class="fa-solid fa-id-card"></i> </li>
-                <li><a href="#">Ingresá</a> <i class="fa-solid fa-arrow-right-to-bracket"></i> </li>
+                <li><a href="/register.html">Creá tu cuenta</a> <i class="fa-solid fa-id-card"></i> </li>
+                <li><a href="/login.html">Ingresá</a> <i class="fa-solid fa-arrow-right-to-bracket"></i> </li>
                 <li><a href="#">Mis compras</a> <i class="fa-solid fa-basket-shopping"></i> </li>
             </ul>
         </nav>
@@ -53,7 +55,7 @@
         </button>
     </header>
     <main>
-        <form method="post" action="localhost:3000/">
+        <form method="post" action="localhost:3500/">
             <input type="text" name="nombreYapellido" placeholder=" Nombre y apellido" class="inputTexto" minlength="5" required>
             <input type="text" name="nombreUsuario" placeholder=" Nombre de usuario" class="inputTexto" minlength="5" required>
             <input type="email" name="email" placeholder=" Correo" class="inputTexto" minlength="5" required>
